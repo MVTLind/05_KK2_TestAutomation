@@ -1,0 +1,74 @@
+{
+  "id": "e04ccc09-706a-4a73-96db-9622ce04dd7d",
+  "version": "2.0",
+  "name": "05_TestAutomation_Scifibokhandlen",
+  "url": "https://www.sfbok.se",
+  "tests": [{
+    "id": "e8ec4368-4b8f-45c4-9df6-2aac183b05e2",
+    "name": "Direkt knapp till Vanliga frågor",
+    "commands": [{
+      "id": "926b4256-6cbd-4b00-9c21-a9704fe15dd2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f936ca27-3c05-483d-9ba3-33fa7640050d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31899fab-aebf-45b8-a6a2-4b5ddac07b31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kundo-knowledge-widget__text",
+      "targets": [
+        ["css=.kundo-knowledge-widget__text", "css:finder"],
+        ["xpath=//div[@id='kundo-knowledge-widget']/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1fffaa6-9182-4bf3-b3f5-22b94644e889",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "363c5fd4-ac2e-4d7f-b821-5492fbb25d46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-button--pop-out > .icon",
+      "targets": [
+        ["css=.widget-button--pop-out > .icon", "css:finder"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3966",
+      "windowTimeout": 2000
+    }, {
+      "id": "61b82b7c-4ef5-4c41-85e1-0dcbd8d50718",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3966}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "10fc9395-6726-47c2-adc0-5e3f89e99bc6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8ec4368-4b8f-45c4-9df6-2aac183b05e2"]
+  }],
+  "urls": ["https://www.sfbok.se/"],
+  "plugins": []
+}
