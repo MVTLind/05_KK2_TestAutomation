@@ -1,0 +1,260 @@
+{
+  "id": "e04ccc09-706a-4a73-96db-9622ce04dd7d",
+  "version": "2.0",
+  "name": "05_TestAutomation_Scifibokhandlen",
+  "url": "https://www.sfbok.se",
+  "tests": [{
+    "id": "e8ec4368-4b8f-45c4-9df6-2aac183b05e2",
+    "name": "Direkt knapp till Vanliga frågor",
+    "commands": [{
+      "id": "926b4256-6cbd-4b00-9c21-a9704fe15dd2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f936ca27-3c05-483d-9ba3-33fa7640050d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa9859d4-1ed6-4a87-b0fc-6b37d1899e7d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.kundo-knowledge-widget__button",
+      "targets": [
+        ["css=.kundo-knowledge-widget__button", "css:finder"],
+        ["xpath=//div[@id='kundo-knowledge-widget']/button", "xpath:idRelative"],
+        ["xpath=//div[9]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vanliga frågor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31899fab-aebf-45b8-a6a2-4b5ddac07b31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kundo-knowledge-widget__text",
+      "targets": [
+        ["css=.kundo-knowledge-widget__text", "css:finder"],
+        ["xpath=//div[@id='kundo-knowledge-widget']/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1fffaa6-9182-4bf3-b3f5-22b94644e889",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "363c5fd4-ac2e-4d7f-b821-5492fbb25d46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-button--pop-out > .icon",
+      "targets": [
+        ["css=.widget-button--pop-out > .icon", "css:finder"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3966",
+      "windowTimeout": 2000
+    }, {
+      "id": "61b82b7c-4ef5-4c41-85e1-0dcbd8d50718",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3966}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b7cb0cd-d779-4734-8b8c-c77345263987",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=kundo-knowledge-embed",
+      "targets": [
+        ["id=kundo-knowledge-embed", "id"],
+        ["css=#kundo-knowledge-embed", "css:finder"],
+        ["xpath=//div[@id='kundo-knowledge-embed']", "xpath:attributes"],
+        ["xpath=//article[@id='node-73385']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//article/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2111e4f-9d68-457d-84f0-5e5e3b04f2c9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-header",
+      "targets": [
+        ["css=.page-header", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Vanliga frågor')]", "xpath:innerText"]
+      ],
+      "value": "Vanliga frågor"
+    }, {
+      "id": "57370ccd-8fe5-49ea-9599-1d40ed8888a6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ce85444c-0fa1-44b6-9f6c-c4a7817f9b3b",
+    "name": "ISBN överensstämmer med bok vid sökning",
+    "commands": [{
+      "id": "70b454ab-8c1b-4ff2-91c0-1fbc2171c439",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e3e25e7-987f-4ad4-9a6a-31c87ca0f246",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "800x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f28917b-8e0f-4585-aadd-63181d2a28d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=keys",
+      "targets": [
+        ["name=keys", "name"],
+        ["css=.search-form", "css:finder"],
+        ["xpath=//input[@name='keys']", "xpath:attributes"],
+        ["xpath=//header[@id='navbar']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e93d8a4d-21d0-4557-975e-de90bb96621a",
+      "comment": "",
+      "command": "type",
+      "target": "name=keys",
+      "targets": [
+        ["name=keys", "name"],
+        ["css=.search-form", "css:finder"],
+        ["xpath=//input[@name='keys']", "xpath:attributes"],
+        ["xpath=//header[@id='navbar']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frankenstein"
+    }, {
+      "id": "62cb0326-3527-4244-a49e-6ce8fbbed8d7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=keys",
+      "targets": [
+        ["name=keys", "name"],
+        ["css=.search-form", "css:finder"],
+        ["xpath=//input[@name='keys']", "xpath:attributes"],
+        ["xpath=//header[@id='navbar']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e3aa8045-7583-41cc-b442-cb17b17d40b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Frankenstein",
+      "targets": [
+        ["linkText=Frankenstein", "linkText"],
+        ["css=.views-row-10 h2 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Frankenstein')])[11]", "xpath:link"],
+        ["xpath=//section[@id='block-system-main']/div/div/div[3]/div/div[10]/article/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/produkt/frankenstein-713133')])[2]", "xpath:href"],
+        ["xpath=//div[10]/article/h2/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28f4a6ef-8aec-4e70-b4d7-cb702201b49d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.meta > .field-name-isbn .field-item",
+      "targets": [
+        ["css=.meta > .field-name-isbn .field-item", "css:finder"],
+        ["xpath=//section[@id='block-system-main']/article/div[2]/div/div/div/div[3]/div[3]/div[6]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[6]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfc41c7b-3946-4763-8a50-96f7067503a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=keys",
+      "targets": [
+        ["name=keys", "name"],
+        ["css=.search-form", "css:finder"],
+        ["xpath=//input[@name='keys']", "xpath:attributes"],
+        ["xpath=//header[@id='navbar']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8d841a5-e298-4908-9168-e5d97e39d861",
+      "comment": "",
+      "command": "type",
+      "target": "name=keys",
+      "targets": [
+        ["name=keys", "name"],
+        ["css=.search-form", "css:finder"],
+        ["xpath=//input[@name='keys']", "xpath:attributes"],
+        ["xpath=//header[@id='navbar']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "9781435159624"
+    }, {
+      "id": "63f58c89-1019-424a-b29e-a29f2b13063e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=keys",
+      "targets": [
+        ["name=keys", "name"],
+        ["css=.search-form", "css:finder"],
+        ["xpath=//input[@name='keys']", "xpath:attributes"],
+        ["xpath=//header[@id='navbar']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f494db98-d501-49e9-b045-bfe1f71d6879",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Frankenstein",
+      "targets": [
+        ["linkText=Frankenstein", "linkText"],
+        ["css=h2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Frankenstein')]", "xpath:link"],
+        ["xpath=//section[@id='block-system-main']/div/div/div[3]/div/div/article/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/produkt/frankenstein-713133')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Frankenstein')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de5feb1a-ff30-4e21-8ee8-8a1b4d977e75",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b064ec95-3eaf-431d-ab66-a210ca1f6546",
+    "name": "CI Test av Scifi bokhandlen",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8ec4368-4b8f-45c4-9df6-2aac183b05e2", "ce85444c-0fa1-44b6-9f6c-c4a7817f9b3b"]
+  }],
+  "urls": ["https://www.sfbok.se/"],
+  "plugins": []
+}
